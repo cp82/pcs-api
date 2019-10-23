@@ -24,7 +24,9 @@ export class PcsUnitScriptApi {
 }
 
 export class PcsQueryScriptApi {
-  public execute(): void {
-    
+  public execute(): void {    
+  }
+
+  public setQueryConditionuserInput(pIndex: number, pValue: string): void {
   }
 }
