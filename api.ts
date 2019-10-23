@@ -1,4 +1,4 @@
-export class PcsViewApi {
+export class PcsViewScriptApi {
   public saveDataContext() {
     console.log("Saving datacontext");
   }
@@ -7,14 +7,24 @@ export class PcsViewApi {
     console.log("Cancelling datacontext");
   }
 
-  public getUnitById(pId: number): PcsUnitApi {
+  public getUnitById(pId: number): PcsUnitScriptApi {
     console.log("Getting View by Id");
-    return new PcsUnitApi();
+    return new PcsUnitScriptApi();
   }
 }
 
-export class PcsUnitApi {
-  public get View(): PcsViewApi {
-    return new PcsViewApi();
+export class PcsUnitScriptApi {
+  public get View(): PcsViewScriptApi {
+    return new PcsViewScriptApi();
+  }
+
+  public get Query(): PcsQueryScriptApi {
+    return new PcsQueryScriptApi();
+  }
+}
+
+export class PcsQueryScriptApi {
+  public execute(): void {
+    
   }
 }

@@ -1,12 +1,9 @@
-import { PcsViewApi, PcsUnitApi } from './api';
+import { PcsViewScriptApi, PcsUnitScriptApi, PcsQueryScriptApi } from './api';
 
-function MyFunction(pView: PcsViewApi) {
+function MyFunction(pView: PcsViewScriptApi) {
   /* Place your TypeScript Code here */
   pView.saveDataContext();
 
-  let x: any = new Object();
-  x.id = 5;
-  x.name = 'Test';
-  console.log(x);
+  console.log(pView.getUnitById(1));
 }
 
