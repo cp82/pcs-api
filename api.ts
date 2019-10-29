@@ -30,3 +30,9 @@ export class PcsQueryScriptApi {
   public setQueryConditionuserInput(pIndex: number, pValue: string): void {
   }
 }
+
+export class PcsScriptApiParams {
+    public View: PcsViewScriptApi;
+    public Unit: PcsUnitScriptApi;
+    public Query: PcsQueryScriptApi;
+}
