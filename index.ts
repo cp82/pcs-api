@@ -1,10 +1,7 @@
-import { PcsViewScriptApi, PcsUnitScriptApi, PcsQueryScriptApi } from './api';
+import { PcsViewScriptApi, PcsUnitScriptApi, PcsQueryScriptApi, PcsScriptApiParams } from './api';
 
-function MyFunction(pView: PcsViewScriptApi) {
+function MyFunction(pParams: PcsScriptApiParams) {
   /* Place your TypeScript Code here */
-  pView.saveDataContext();
-  let lQuery: PcsQueryScriptApi = pView.getUnitById(1).Query;
-  lQuery.execute();
-  console.log(lQuery);
+  pParams.View.saveDataContext();
 }
 
