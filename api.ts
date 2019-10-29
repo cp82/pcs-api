@@ -21,6 +21,12 @@ export class PcsUnitScriptApi {
   public get Query(): PcsQueryScriptApi {
     return new PcsQueryScriptApi();
   }
+
+  public navigateBackward(): void {    
+  }
+
+  public navigateForward(): void {    
+  }
 }
 
 export class PcsQueryScriptApi {

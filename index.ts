@@ -1,6 +1,6 @@
 import { PcsViewScriptApi, PcsUnitScriptApi, PcsQueryScriptApi, PcsScriptApiParams } from './api';
 
-function MyFunction(pParams: PcsScriptApiParams) {
+function saveDataContext(pParams: PcsScriptApiParams) {
   /* Place your TypeScript Code here */
   pParams.View.saveDataContext();
 }
